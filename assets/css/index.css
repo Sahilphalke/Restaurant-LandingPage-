@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+:root {
+    --yellow: #FEA116;
+    --bgcolor: #0F172B;
+    --fontcolor: #ffffff;
+    --font: "Nunito", serif;
+    --font1: "pacifico", serif;
+    --font2: "heebo", serif;
+}
+
+body {
+    background-color: #f1f8ff;
+}
+
+.back-color {
+    background-color: var(--fontcolor);
+}
+
+
+.bg-img {
+    background-image: url("/images/bg-hero.jpg");
+    background-color: rgb(15, 23, 43, 0.9);
+    background-blend-mode: multiply;
+}
+
+.bg-navbar {
+    background-color: var(--bgcolor);
+}
+
+.navbar-brand {
+    color: var(--yellow);
+    font-family: var(--font);
+    font-weight: 600;
+}
+
+.nav-item a {
+    color: var(--fontcolor);
+    font-family: var(--font);
+}
+
+.nav-item a.active {
+    color: var(--yellow);
+}
+
+.nav-item a:hover {
+    color: var(--yellow);
+}
+
+.booktable {
+    background-color: var(--yellow);
+    border-radius: 2px;
+    /* padding: 5px 5px 5px 25px; */
+    color: #ffffff;
+    width: 100%;
+}
+
+.header h1 {
+    color: var(--fontcolor);
+    font-family: var(--font);
+    font-size: 75px;
+    font-weight: 550;
+}
+
+.header p {
+    color: var(--fontcolor);
+    font-family: var(--font);
+    font-size: 16.8px;
+    font-weight: 100;
+}
+
+.tablebook {
+    background-color: var(--yellow);
+    padding: 15px 40px 15px 40px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.animated-text {
+
+    animation: slideInLeft 1s ease-in-out;
+
+}
+
+
+
+@keyframes slideInLeft {
+
+    from {
+
+        transform: translateX(-100%);
+
+    }
+
+    to {
+
+        transform: translateX(0);
+
+    }
+
+}
+
+.rotate {
+    animation: rotation 45s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* card section  */
+
+.card-body h2 {
+    color: var(--yellow);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-body h5 {
+    font-family: var(--font);
+    font-size: 22px;
+    font-weight: 550;
+    color: var(--bgcolor);
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 5px 5px 58px #d0d0d0,
+        -5px -5px 58px #f0f0f0;
+}
+
+.card:hover {
+    background-color: var(--yellow);
+    color: var(--fontcolor);
+}
+
+.card h2:hover {
+    color: var(--fontcolor);
+}
+
+/* about us start */
+
+.about-us h5 {
+    font-family: var(--font1);
+    color: var(--yellow);
+}
+
+.about-us .line {
+    width: 8%;
+    height: 2px;
+    border: 1.6px solid var(--yellow);
+    margin: 10px 0;
+}
+
+.about-us h1 {
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 35px;
+    color: var(--bgcolor);
+}
+
+.about-us p {
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 16.5px;
+}
+
+.about-us h3 {
+    font-family: var(--font1);
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.about-us h4 {
+    font-family: var(--font2);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--bgcolor);
+}
+
+.about-us .year {
+    border-left: 5px solid var(--yellow);
+}
+
+.about-us .popular {
+    border-left: 5px solid var(--yellow);
+}
+
+.readmore {
+    border-radius: 0%;
+    background-color: var(--yellow);
+    color: var(--fontcolor);
+    padding: 15px 40px 15px 40px;
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+
+/* food menu start  */
+
+.foodmenu .line1 {
+    width: 4%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+    margin: 10px 0;
+}
+
+.foodmenu .line2 {
+    width: 4%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+    margin: 10px 0;
+}
+
+.foodmenu h4 {
+    font-family: var(--font1);
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.foodmenu h2 {
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--bgcolor);
+}
+
+.foodmenu h3 {
+    font-family: var(--font);
+    color: var(--yellow);
+}
+
+.foodmenu p {
+    font-family: var(--font2);
+    color: #666565;
+}
+
+.foodmenu h6 {
+    font-family: var(--font2);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bgcolor);
+}
+
+.menuitem .menuline {
+    width: 100%;
+    height: 0.5px;
+    border: 0.5px ridge #666567;
+    margin: 5px 0;
+}
+
+.menuitem h4 {
+    font-family: var(--font);
+    color: var(--bgcolor);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menuitem h3 {
+    font-family: var(--font);
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menuitem p {
+    font-family: var(--font2);
+    font-style: italic;
+    font-size: medium;
+}
+
+.btn.active {
+    border-bottom: 3px solid var(--yellow);
+    color: aliceblue;
+}
+
+.reservation i {
+    font-size: 55px;
+    color: var(--bgcolor);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation button {
+    padding: 30px 40px 30px 40px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: var(--yellow);
+}
+
+.reservation-form {
+    background-color: var(--bgcolor);
+}
+
+.reservation-form h6 {
+    font-family: var(--font1);
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.reservation-form .reservation-line {
+    width: 8%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.reservation-form h2 {
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--fontcolor);
+}
+
+.reservation-form button {
+    background-color: var(--yellow);
+    color: var(--fontcolor);
+    font-family: var(--font);
+    font-weight: 600;
+}
+
+.members h6 {
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--yellow);
+}
+
+.members .line1 {
+    width: 5%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.members .line2 {
+    width: 5%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.members h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 45px;
+    font-weight: 750;
+}
+
+.members-card h4 {
+    font-family: var(--font);
+    color: var(--bgcolor);
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}   
+
+.members-card p {
+    color: #838383;
+    text-align: center;
+}
+.members-card p:hover{
+color: var(--fontcolor);
+}
+
+.members-card .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.members-card a {
+    color: var(--fontcolor);
+    background-color: var(--bgcolor);
+    padding-bottom: 30px;
+    border-radius: 0%;
+    border-radius: 20px 20px 0 0;
+}
+
+.members-card .cards {
+    transition: transform .2s;
+    transition-duration: 5s;
+    height: 400px;
+    color: var(--fontcolor);
+    animation-duration: 1s;
+}
+
+.cards:hover{
+    animation-name: cardanimation;
+    animation-timing-function: ease;
+}
+
+@keyframes cardanimation{
+    0% {height: 400px;}
+    100% {height: 450px;}
+}
+
+/* client section  */
+
+.client h6{
+    font-family: var(--font1);
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.client .line1{
+    text-align: center;
+    width: 4%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.client .line2{
+    text-align: center;
+    width: 4%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.client h3{
+    font-family: var(--font);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* footer section start  */
+
+.footer{
+background-color: var(--bgcolor);
+color: var(--fontcolor);
+}
+
+.footer h3{
+    font-family: var(--font1);
+    color: var(--yellow);
+}
+
+.footer .footerline{
+    width: 10%;
+    height: 1px;
+    border: 1px solid var(--yellow);
+}
+
+.contact a{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer h4{
+    font-family: var(--font);
+    font-size: 20px;
+    font-family: 500;
+}
+
+.footer h6{
+    font-family: var(--font2);
+}
+
+.footer p{
+    font-family: var(--font2);
+}
+
+.footer form .btn{
+    background-color: var(--yellow);
+    font-family: var(--font2);
+    font-weight: 500;
+}
